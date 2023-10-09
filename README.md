@@ -1,7 +1,7 @@
 
-# Spring Boot Machine Outlier Detection
+# Machine Outlier Detection Application
 
-This Spring Boot application provides an API for detecting outliers in a collection of machines based on their ages.
+This is a Spring Boot application which provides an API for detecting outliers in a collection of machines based on their ages.
 
 ## Summary
 
@@ -19,7 +19,11 @@ The application allows users to submit a collection of machines with their respe
 1. Navigate to the project root directory.
 2. Run the following command to start the application:
 ```bash
-mvn spring-boot:run
+# If you are running from a unix machine:
+./gradlew bootRun
+
+# If you are running from a windows machine:
+gradlew.bat bootRun
 ```
 This will start the application on the default port `8080`.
 
