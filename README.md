@@ -36,7 +36,7 @@ A list of machines in the form:
 ```json
 [
     {
-        "machined": "machine_identifier",
+        "machineId": "machine_identifier",
         "age": "time_period"
     }
 ]
@@ -50,11 +50,11 @@ A list of machines in the form:
 ```json
 [
     {
-        "machined": "1",
+        "machineId": "1",
         "age": "1 year"
     },
     {
-        "machined": "2",
+        "machineId": "2",
         "age": "7 years"
     }
 ]
@@ -69,7 +69,7 @@ The API will return a list of machines that are considered outliers.
 To analyze machines and find outliers:
 
 ```bash
-curl -X POST -H "Content-Type: application/json" -d '[{"machined": "1", "age": "1 year"}, {"machined": "2", "age": "7 years"}]' http://localhost:8080/machines
+curl -X POST -H "Content-Type: application/json" -d '[{"machineId": "1", "age": "1 year"}, {"machineId": "2", "age": "7 years"}]' http://localhost:8080/machines
 ```
 
 ## Conclusion
